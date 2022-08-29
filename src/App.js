@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import Modal from './components/modal/Modal';
 import ProductPage from './components/productpage/productPage';
 import initLocalStorage from './getProducts';
+import PropTypes from 'prop-types'
 
 initLocalStorage()
 
@@ -167,6 +168,26 @@ class App extends Component {
 
  }
 
+
+
+
+}
+App.propTypes = {
+  text:PropTypes.string,
+  backgroundColor:PropTypes.string,
+  color:PropTypes.string,
+  addCardsArr:PropTypes.array, 
+  addFavoritesArr:PropTypes.array, 
+  isOpenModal:PropTypes.bool.isRequired, 
+  products: PropTypes.array.isRequired
+}
+
+App.defaultProps={
+text:'Do you want to add this product to cart?',
+backgroundColor:'aliceblue',
+color:'black',
+addCardsArr:[],
+addFavoritesArr:[]
 
 }
 
