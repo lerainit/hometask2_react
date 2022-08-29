@@ -178,8 +178,8 @@ App.propTypes = {
   color:PropTypes.string,
   addCardsArr:PropTypes.array, 
   addFavoritesArr:PropTypes.array, 
-  isOpenModal:PropTypes.bool.isRequired, 
-  products: PropTypes.array.isRequired
+  isOpenModal:PropTypes.bool, 
+  products: PropTypes.array
 }
 
 App.defaultProps={
@@ -187,7 +187,9 @@ text:'Do you want to add this product to cart?',
 backgroundColor:'aliceblue',
 color:'black',
 addCardsArr:[],
-addFavoritesArr:[]
+addFavoritesArr:[],
+products:[],
+isOpenModal:false
 
 }
 
