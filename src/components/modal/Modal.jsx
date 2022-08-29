@@ -1,7 +1,7 @@
 import React,{PureComponent} from 'react';
 import '../../App.scss';
 import PropTypes from 'prop-types'
-import './modal.scss'
+import  styles  from './modal.module.scss'
 
 
 
@@ -13,13 +13,13 @@ class Modal extends PureComponent{
 return(
 <>
 
-<div className='modal' >
-  <div className='modal_main_container' style={{backgroundColor,color}} text ={text}  >
+<div className={styles.modal}>
+  <div className={styles.modal_main_container} style={{backgroundColor,color}} text ={text}  >
  
-<button className='close_btn' onClick ={handleClick}>X</button>
+<button className={styles.close_btn} onClick ={handleClick}>X</button>
 
 <p>{text}</p>
-<button className='modal_btn' onClick ={addCart} >Add to cart</button>
+<button className={styles.modal_btn} onClick ={addCart} >Add to cart</button>
 </div>
 </div>
 

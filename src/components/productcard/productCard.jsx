@@ -1,6 +1,6 @@
  import React, {PureComponent} from 'react'
  import PropTypes from 'prop-types'
- import './productcard.scss'
+ import  styles from './productcard.module.scss'
 
  class Card extends PureComponent{
 
@@ -13,7 +13,7 @@ const {name,price,url,art,addFavoritesFunc,openModal,id,fill} = this.props
             <ul>
                 <li><span>Name:</span>{name}</li>
                 <li><span>Price:</span>{price}</li>
-                <li><img className='image' src={url}   alt = 'Product '/></li>
+                <li><img className={styles.image} src={url}   alt = 'Product '/></li>
                 <li><span>Art:</span>{art}</li>
 
                 <svg className='svg' onClick = {()=>addFavoritesFunc(id)} version="1.0" xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +37,7 @@ fill={fill} stroke="none">
 1388 -620 1525 -56 138 -104 253 -108 258 -3 4 -278 -610 -610 -1365z"/>
 </g>
 </svg>
- <button  className='addCart_btn' onClick = {()=>{openModal(id)}}>Add cart</button>
+ <button  className={styles.addCart_btn} onClick = {()=>{openModal(id)}}>Add cart</button>
             </ul>
             
             
