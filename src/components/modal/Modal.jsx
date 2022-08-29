@@ -14,6 +14,7 @@ return(
 <>
 
 <div className={styles.modal}>
+  <div className={styles.outer_container} onClick ={handleClick}></div>
   <div className={styles.modal_main_container} style={{backgroundColor,color}} text ={text}  >
  
 <button className={styles.close_btn} onClick ={handleClick}>X</button>
@@ -22,6 +23,7 @@ return(
 <button className={styles.modal_btn} onClick ={addCart} >Add to cart</button>
 </div>
 </div>
+
 
 </>
   ) 

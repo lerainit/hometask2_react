@@ -23,8 +23,29 @@
    
   }
   .container{
-    width: 370px;
+    width: 500px;
     display: flex;
     color: cadetblue;
+    gap:7px;
   }
-  
+  .button_container{
+    width: 200px;
+    height: 70px;
+  }
+  .clear_cart_btn{
+    width: 60px;
+    height: 40px;
+    border-radius: 7px;
+    background-color: cadetblue;
+    color: #fff;
+    margin-top: 10px;
+  }
+  .clear_fav_btn{
+    width: 70px;
+    height: 40px;
+    border-radius: 7px;
+    background-color: cadetblue;
+    color: #fff;
+    margin-top: 10px;
+    margin-left: 5px;
+  }

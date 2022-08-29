@@ -1,11 +1,16 @@
-.modal{
+.outer_container{
     position: absolute;
     width: 100%;
-    height: 1250px;
+    height: 1500px;
   
    
     top: 0;
     background-color:rgba(0,0,0,0.7);
+  }
+  @media(max-width:980px){
+    .outer_container{
+height: 2100px;
+    }
   }
   .modal_main_container{
     width: 550px;

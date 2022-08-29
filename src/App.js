@@ -145,13 +145,16 @@ class App extends Component {
       <>
 
         <div className='App'>
+         
 
           <ProductPage addCards={addCardsArr.length} addFavoritesPage={addFavoritesArr.length} products={products} openModal={this.openModal} addFavoritesFunc={this.addtoFavorites} clearFavorites={this.clearFavorites} clearCart={this.clearCart} ></ProductPage>
+
+
+          </div>
 
           {isOpenModal && <Modal text={text} backgroundColor={backgroundColor} color={color} handleClick={() => { this.setState({ isOpenModal: false }) }} addCart={() => { this.addCart(cardId) }}></Modal>}
 
 
-        </div>
 
 
 
