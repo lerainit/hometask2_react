@@ -1,0 +1,35 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+
+ul{
+  width: 300px;
+  height: 350px;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  list-style: none;
+  background-color:rgb(59,122,87,0.3);
+ 
+}
+span{
+  color: darkblue;
+  font-weight: bold;
+}
+
+
+.favorites_btn{
+  width: 80px;
+  height: 40px;
+  border-radius: 7px;
+}
+li{
+  margin: 5px;
+}
+li:first-child{
+  margin-top: 20px;
+}
+
